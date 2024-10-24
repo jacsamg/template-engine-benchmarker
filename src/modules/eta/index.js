@@ -1,7 +1,7 @@
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 import { Eta as EtaJs } from "eta";
-import { TemplateEngine } from '../../class/engine.class.js';
+import { TemplateEngine } from '../../classes/engine.class.js';
 
 export class Eta extends TemplateEngine {
   constructor(usersMock) {

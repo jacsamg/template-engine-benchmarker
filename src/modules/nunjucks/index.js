@@ -1,26 +1,23 @@
 import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
-import { Liquid as LiquidJS } from 'liquidjs';
+import nunjucksJs from "nunjucks";
 import { TemplateEngine } from '../../classes/engine.class.js';
 
-export class Liquid extends TemplateEngine {
+export class Nunjucks extends TemplateEngine {
   constructor(usersMock) {
-    super(Liquid.name, usersMock);
+    super(Nunjucks.name, usersMock);
     this.setup();
   }
 
   setup() {
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = dirname(__filename);
-    this.engine = new LiquidJS({
-      root: resolve(__dirname, 'views'),
-      extname: '.liquid'
-    });
+    this.nunjucks = nunjucksJs.configure(resolve(__dirname, 'views'), { autoescape: true });
   }
 
   async test01() {
     try {
-      return await this.engine.renderFile("test-01", { users: this.usersMock });
+      return this.nunjucks.render("test-01.njk", { users: this.usersMock });
     } catch (error) {
       console.error(error);
     }

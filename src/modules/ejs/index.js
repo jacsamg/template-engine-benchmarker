@@ -2,7 +2,7 @@ import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 import { readFileSync } from 'fs';
 import ejs from 'ejs';
-import { TemplateEngine } from '../../class/engine.class.js';
+import { TemplateEngine } from '../../classes/engine.class.js';
 
 export class Ejs extends TemplateEngine {
   constructor(usersMock) {
@@ -13,7 +13,7 @@ export class Ejs extends TemplateEngine {
   setup() {
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = dirname(__filename);
-    const template = readFileSync(join(__dirname, 'views', 'test-01.html'), 'utf8');
+    const template = readFileSync(join(__dirname, 'views', 'test-01.ejs'), 'utf8');
     this.view = ejs.compile(template);
   }
 

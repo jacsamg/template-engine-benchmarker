@@ -1,6 +1,6 @@
 import { renderToStaticMarkup } from 'react-dom/server';
 import { Test01 } from './dist/test-01.js';
-import { TemplateEngine } from '../../class/engine.class.js';
+import { TemplateEngine } from '../../classes/engine.class.js';
 import { htmlDoc } from '../../utilities/html-doc.utility.js';
 
 export class React extends TemplateEngine {

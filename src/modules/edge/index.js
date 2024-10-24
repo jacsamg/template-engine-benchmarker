@@ -1,5 +1,5 @@
 import { Edge as EdgeJs } from 'edge.js';
-import { TemplateEngine } from '../../class/engine.class.js';
+import { TemplateEngine } from '../../classes/engine.class.js';
 
 export class Edge extends TemplateEngine {
   constructor(usersMock) {

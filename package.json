@@ -1,8 +1,9 @@
 {
   "name": "template-engine-benchmarker",
+  "description": "Testing rendering speed of different frontend libraries",
   "version": "1.0.0",
   "author": "Jacob Samuel G.",
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [
     "edge",
     "ejs",
@@ -22,7 +23,6 @@
     "build:preact": "npm run build --prefix ./src/modules/preact",
     "build:react": "npm run build --prefix ./src/modules/react"
   },
-  "description": "",
   "dependencies": {
     "edge.js": "^6.2.0",
     "ejs": "^3.1.10",
@@ -32,6 +32,7 @@
     "inferno-create-element": "^8.2.3",
     "inferno-server": "^8.2.3",
     "liquidjs": "^10.18.0",
+    "nunjucks": "^3.2.4",
     "preact": "^10.24.3",
     "preact-render-to-string": "^6.5.11",
     "react": "^18.3.1",
