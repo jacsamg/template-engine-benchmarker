@@ -1,0 +1,44 @@
+{
+  "name": "template-engine-benchmarker",
+  "version": "1.0.0",
+  "author": "Jacob Samuel G.",
+  "license": "ISC",
+  "keywords": [
+    "edge",
+    "ejs",
+    "eta",
+    "handlebars",
+    "inferno",
+    "liquidjs",
+    "preact",
+    "react"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "build": "npm run build:inferno && npm run build:preact && npm run build:react",
+    "build:inferno": "npm run build --prefix ./src/modules/inferno",
+    "build:preact": "npm run build --prefix ./src/modules/preact",
+    "build:react": "npm run build --prefix ./src/modules/react"
+  },
+  "description": "",
+  "dependencies": {
+    "edge.js": "^6.2.0",
+    "ejs": "^3.1.10",
+    "eta": "^3.5.0",
+    "handlebars": "^4.7.8",
+    "inferno": "^8.2.3",
+    "inferno-create-element": "^8.2.3",
+    "inferno-server": "^8.2.3",
+    "liquidjs": "^10.18.0",
+    "preact": "^10.24.3",
+    "preact-render-to-string": "^6.5.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "autocannon": "^8.0.0",
+    "vite": "^5.4.10"
+  }
+}
