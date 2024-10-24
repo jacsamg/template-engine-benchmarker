@@ -7,21 +7,25 @@ import { Inferno } from './src/modules/inferno/index.js';
 import { Liquid } from './src/modules/liquid/index.js';
 import { Nunjucks } from './src/modules/nunjucks/index.js';
 import { Preact } from './src/modules/preact/index.js';
+import { Pug } from './src/modules/pug/index.js';
 import { React } from './src/modules/react/index.js';
+import { Vue } from './src/modules/vue/index.js';
 import { USERS_MOCK } from './src/mocks/users.mock.js';
 
 (async () => {
   const engines = [
-    // new Edge(USERS_MOCK),
-    // new Ejs(USERS_MOCK),
-    // new Eta(USERS_MOCK),
-    // new Handlebars(USERS_MOCK),
-    // new Inferno(USERS_MOCK),
-    // new Liquid(USERS_MOCK),
-    new Nunjucks(USERS_MOCK),
-    // new Preact(USERS_MOCK),
-    // new React(USERS_MOCK),
-  ];
+    Edge,
+    Ejs,
+    Eta,
+    Handlebars,
+    Inferno,
+    Liquid,
+    Nunjucks,
+    Preact,
+    Pug,
+    React,
+    Vue
+  ].map(engine => new engine(USERS_MOCK));
 
   for (const engine of engines) {
     const serverPort = 3000;

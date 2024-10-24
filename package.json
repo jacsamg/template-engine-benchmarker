@@ -11,8 +11,11 @@
     "handlebars",
     "inferno",
     "liquidjs",
+    "nunjucks",
     "preact",
-    "react"
+    "pug",
+    "react",
+    "vue"
   ],
   "type": "module",
   "main": "index.js",
@@ -35,8 +38,10 @@
     "nunjucks": "^3.2.4",
     "preact": "^10.24.3",
     "preact-render-to-string": "^6.5.11",
+    "pug": "^3.0.3",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "vue": "^3.5.12"
   },
   "devDependencies": {
     "autocannon": "^8.0.0",
