@@ -9,22 +9,26 @@ import { Nunjucks } from './src/modules/nunjucks/index.js';
 import { Preact } from './src/modules/preact/index.js';
 import { Pug } from './src/modules/pug/index.js';
 import { React } from './src/modules/react/index.js';
+import { Solid } from './src/modules/solid/index.js';
+import { Sonnet } from './src/modules/sonnet/index.js';
 import { Vue } from './src/modules/vue/index.js';
 import { USERS_MOCK } from './src/mocks/users.mock.js';
 
 (async () => {
   const engines = [
-    Edge,
-    Ejs,
-    Eta,
-    Handlebars,
-    Inferno,
-    Liquid,
-    Nunjucks,
-    Preact,
+    // Edge,
+    // Ejs,
+    // Eta,
+    // Handlebars,
+    // Inferno,
+    // Liquid,
+    // Nunjucks,
+    // Preact,
     Pug,
-    React,
-    Vue
+    // React,
+    // Solid,
+    Sonnet,
+    // Vue
   ].map(engine => new engine(USERS_MOCK));
 
   for (const engine of engines) {

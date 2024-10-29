@@ -1,10 +1,7 @@
-import { createElement } from 'inferno-create-element';
-import { Fragment } from 'inferno';
-
 export const Test01 = (users) => {
   return (
-    <Fragment>
-      <h2>HTML Table</h2>
+    <>
+      <h2>HTML Table 01</h2>
       <table>
         <thead>
           <tr>
@@ -23,6 +20,6 @@ export const Test01 = (users) => {
           )}
         </tbody>
       </table>
-    </Fragment>
+    </>
   );
 };

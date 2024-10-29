@@ -6,12 +6,14 @@ head
   title SSR Benchmarker
 h2 HTML Table
 table
-  tr
-    th ID
-    th Name
-    th Email
-  tr
-    each user in users
-      td=user.id
-      td=user.name
-      td=user.email
+  thead
+    tr
+      th ID
+      th Name
+      th Email
+  tbody
+    tr
+      each user in users
+        td=user.id
+        td=user.name
+        td=user.email

@@ -15,15 +15,15 @@ export class Vue extends TemplateEngine {
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = dirname(__filename);
     const template = readFileSync(join(__dirname, 'views', 'test-01.html'), 'utf8');
-    this.view = createSSRApp({
-      data: () => ({ users: this.usersMock }),
-      template
+    this.view = (users) => createSSRApp({
+      template,
+      data: () => ({ users }),
     });
   }
 
   async test01() {
     try {
-      return await renderToString(this.view);
+      return await renderToString(this.view(this.usersMock));
     } catch (error) {
       console.error(error);
     }
