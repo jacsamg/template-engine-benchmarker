@@ -16,6 +16,7 @@
     "pug",
     "react",
     "solid",
+    "sonnet",
     "vue"
   ],
   "type": "module",
