@@ -11,24 +11,28 @@ import { Pug } from './src/modules/pug/index.js';
 import { React } from './src/modules/react/index.js';
 import { Solid } from './src/modules/solid/index.js';
 import { Sonnet } from './src/modules/sonnet/index.js';
+import { VanillaA } from './src/modules/vanilla-a/index.js';
+import { VanillaB } from './src/modules/vanilla-b/index.js';
 import { Vue } from './src/modules/vue/index.js';
 import { USERS_MOCK } from './src/mocks/users.mock.js';
 
 (async () => {
   const engines = [
-    // Edge,
-    // Ejs,
-    // Eta,
-    // Handlebars,
-    // Inferno,
-    // Liquid,
-    // Nunjucks,
-    // Preact,
+    Edge,
+    Ejs,
+    Eta,
+    Handlebars,
+    Inferno,
+    Liquid,
+    Nunjucks,
+    Preact,
     Pug,
-    // React,
-    // Solid,
+    React,
+    Solid,
     Sonnet,
-    // Vue
+    VanillaA,
+    VanillaB,
+    Vue
   ].map(engine => new engine(USERS_MOCK));
 
   for (const engine of engines) {

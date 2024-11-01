@@ -1,6 +1,6 @@
 {
   "name": "template-engine-benchmarker",
-  "description": "Testing rendering speed of different frontend libraries",
+  "description": "Testing server side rendering speed of different frontend libraries",
   "version": "1.0.0",
   "author": "Jacob Samuel G.",
   "license": "MIT",
@@ -17,6 +17,7 @@
     "react",
     "solid",
     "sonnet",
+    "vanilla",
     "vue"
   ],
   "type": "module",

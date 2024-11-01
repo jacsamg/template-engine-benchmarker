@@ -9,8 +9,7 @@ export class Sonnet extends TemplateEngine {
 
   async test01() {
     try {
-      const body = test01({ users: this.usersMock }).get();
-      const html = htmlDoc(body);
+      const html = test01({ users: this.usersMock }).get();
 
       return html;
     } catch (error) {
