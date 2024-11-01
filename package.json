@@ -1,6 +1,6 @@
 {
   "name": "template-engine-benchmarker",
-  "description": "Testing server side rendering speed of different frontend libraries",
+  "description": "Exploring server side rendering speed of different frontend libraries and template engines",
   "version": "1.0.0",
   "author": "Jacob Samuel G.",
   "license": "MIT",

@@ -1,5 +1,5 @@
 # Template engine benchmarker (SSR)
-Exploring server side rendering speed of different frontend libraries.
+Exploring server side rendering speed of different frontend libraries and template engines.
 
 ## Features
 - No hydration.
